@@ -1,0 +1,8 @@
+This is how you should run this:
+
+compile client_ann.c with:
+gcc client_ann.c ei_utils.c fann_utils.c -o client_ann -lerl_interface -lei -lpthread -ldoublefann -lm
+
+to compile and run fl.erl or demo.erl (the name does not need to be 'server'):
+erlc fl.erl
+erl -sname server -eval 'fl:main().'
